@@ -1,0 +1,10 @@
+@import "../styles/utils.scss";
+
+.test {
+    border: 2px solid $pink;
+    background: $dark-grey;
+
+    .container {
+        border: 2px solid $black;
+    }
+}
