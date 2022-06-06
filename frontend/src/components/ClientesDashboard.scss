@@ -1,0 +1,10 @@
+@import "../styles/utils.scss";
+
+.client-container{
+    padding: 30px;
+
+    .span-card{
+        flex-grow: 1
+    }
+
+}
