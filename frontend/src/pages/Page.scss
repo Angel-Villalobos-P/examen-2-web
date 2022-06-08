@@ -1,0 +1,22 @@
+@import "../styles/utils.scss";
+
+.page {
+    border: 2px solid $pink;
+    
+    .container-fluid {
+        border: 2px solid $black;
+
+        .navops{
+            background-color: $light-grey;
+            border: 2px solid $black;
+
+            .btn-light:hover{
+                background-color: $dark-grey;
+                border-color: $dark-grey;
+            }
+        }
+
+    }
+    
+    
+}
