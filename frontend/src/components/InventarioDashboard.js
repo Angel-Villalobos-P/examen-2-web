@@ -2,6 +2,7 @@ import React from 'react'
 import './InventarioDashboard.scss'
 
 const InventarioDashboard = () => {
+  const INVETARIO_LABELS = ["Identificador", "Producto"]
   return (
     <div className='inventory-container'>
       <div className='card'>
