@@ -1,9 +1,27 @@
 import mongoose from "mongoose";
 
+const lineaDetalle = mongoose.Schema({
+  nombre: {
+    type: String,
+  },
+  cantidad: {
+    type: String,
+  },
+  impuestos: {
+    type: String,
+  },
+  subtotal: {
+    type: String,
+  },
+  total: {
+    type: String,
+  },
+});
+
 const facturaSchema = mongoose.Schema({
   cliente: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Cliente",
+    type: String,
+    required: true,
   },
   fecha: {
     type: String,
@@ -21,11 +39,6 @@ const facturaSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  productos: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Productos",
-    },
-  ],
+  detalle: [lineaDetalle],
 });
 export default mongoose.model("Factura", facturaSchema);

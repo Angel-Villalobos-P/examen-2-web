@@ -5,7 +5,7 @@ import "./ProductosDashboard.scss";
 import { ModalForm } from "./ModalForm";
 
 const ProductosDashboard = () => {
-  const MODEL = { nombre: "", impuesto: "" };
+  const MODEL = { nombre: "", impuesto: "", precio:"" };
 
   const context = useContext(ModalContex);
   const [productos, setProductos] = useState([]);
@@ -65,6 +65,7 @@ const ProductosDashboard = () => {
         <td>{data.index + 1}</td>
         <td>{data.nombre}</td>
         <td>{data.impuesto}</td>
+        <td>{data.precio}</td>
         <td>
           <button
             type="button"
@@ -115,9 +116,9 @@ const ProductosDashboard = () => {
               <thead>
                 <tr>
                   <th scope="col">N°</th>
-                  <th scope="col">Identificador</th>
                   <th scope="col">Nombre</th>
                   <th scope="col">Impuesto</th>
+                  <th scope="col">Precio</th>
                 </tr>
               </thead>
               <tbody>
@@ -127,23 +128,6 @@ const ProductosDashboard = () => {
                       <TableRow data={{ ...producto, index }} key={index} />
                     );
                   })}
-                {/* <tr>
-                  <td>1</td>
-                  <td>123456</td>
-                  <td>test</td>
-                  <td>13.1%</td>
-                  <td>
-                    <button
-                      type="button"
-                      className="btn btn-secondary btn-sm mx-2"
-                    >
-                      Edit
-                    </button>
-                    <button type="button" className="btn btn-secondary btn-sm">
-                      Delete
-                    </button>
-                  </td>
-                </tr> */}
               </tbody>
             </table>
           </div>

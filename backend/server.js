@@ -16,6 +16,7 @@ server.use(express.json());
 
 // Data base connection
 const uri = `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0.lwh3p.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
+
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,

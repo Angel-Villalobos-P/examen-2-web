@@ -9,5 +9,9 @@ const productoSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  precio: {
+    type: String,
+    required: true,
+  },
 });
 export default mongoose.model("Producto", productoSchema);

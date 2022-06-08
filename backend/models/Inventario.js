@@ -1,10 +1,6 @@
 import mongoose from "mongoose";
 
 const inventarioSchema = mongoose.Schema({
-  Producto: {
-    type: String,
-    require: true,
-  },
   producto: {
     type: String,
     required: true,
@@ -13,15 +9,15 @@ const inventarioSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  cantidad_minima: {
+  min: {
     type: String,
     required: true,
   },
-  cantidad_maxima: {
+  max: {
     type: String,
     required: true,
   },
-  gravado_excento: {
+  gravado: {
     type: String,
     required: true,
   },

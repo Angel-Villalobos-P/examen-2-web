@@ -1,22 +1,32 @@
 @import "../styles/utils.scss";
 
 .page {
-    border: 2px solid $pink;
-    
+    // border: 2px solid $pink;
+
     .container-fluid {
-        border: 2px solid $black;
+        // border: 2px solid $black;
 
-        .navops{
+        .navops {
+            padding: 100px 0;
             background-color: $light-grey;
-            border: 2px solid $black;
+            background-color: $dark;
+            // border: 2px solid $black;
 
-            .btn-light:hover{
-                background-color: $dark-grey;
-                border-color: $dark-grey;
+            // .btn-light:hover {
+            //     background-color: $dark-grey;
+            //     border-color: $dark-grey;
+            // }
+            .btn {
+                background: transparent;
+                border: none;
+                font-size: 20px;
+                color: $white;
+                + :hover {
+                    border: none;
+                    color: $dark;
+                    background: $white;
+                }
             }
         }
-
     }
-    
-    
 }
